@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$mainBlack: #222;
+$mainGreen: #82b340;
+$mainWhite: #fff;
+$mainGrey: #ececec;
+$mainTransition: all 0.3s linear;
+
+body {
+	font-family: 'Satisfy', 'Open Sans';
+	background: $mainWhite;
+	color: $mainBlack;
+	font-size: 25px;
+}
+@media screen and (min-width: 550px) {
+  .writerList {
+  	display: grid;
+    grid-gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .writerList {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .writerList {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .writerList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+
+
+
